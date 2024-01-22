@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Shree Ram</title>
+    <link rel="stylesheet" href="ram.css">
+</head>
+<body>
+    <div class="container">
+     
+        <img src="https://1.bp.blogspot.com/-qBHvnfkW1bs/XyZFAi_bbBI/AAAAAAAAwfY/nJzOKwzJ7fE4ILqx1vYwt1JsTKhA8_9eQCLcBGAsYHQ/s2048/RAM%2Bmandir%2B2%2B3D.jpg" alt="">
+        <img class="ram" src="https://kinemasterkingpro.com/wp-content/uploads/2023/03/jai-shri-ram-Text-png-background-HD-Download.png" alt="" style="width:25rem">
+        <div class="name">
+            <div class="p">Days</div>
+            <div class="p">Hours</div>
+            <div class="p">Minutes</div>
+            <div class="p">seconds</div>
+        </div>
+        <div class="time">
+            
+        <div class="launch-time">
+            <p id="days">00</p>
+            <b>:</b>
+            <p id="hours">00</p>
+            <b>:</b>
+            <p id="minutes">00</p>
+            <b>:</b>
+            <p id="seconds">00</p>
+        </div></div>
+    </div>
+    <script>
+        var countDownDate = new Date("jan 22, 2024 00:00:00").getTime();
+        var x=setInterval(function(){
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / (1000));
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+        },1000);
+    </script>
+</body>
+</html>
