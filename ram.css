@@ -1,0 +1,357 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body{
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    position: sticky;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 0;
+    z-index: 9;
+}
+.logo{
+    height: 60px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.nav-list li{
+    list-style: none;
+    padding: 10px;
+}
+.nav-list li a{
+    color: white;
+    text-decoration: none;
+}
+.nav-list li a:hover{
+    color: gray;
+}
+
+.rightnav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: right;
+}
+
+.background{
+    background: rgba(0,0,0,0.6) url('https://www.artofliving.org/in-en/app/uploads/bis-images/13009/2023/08/powerful-Hanuman-Chants-765x1000-f47_18.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#search{
+    padding: 5px;
+    border: 2px solid gray;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.box-main{
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 60%;
+    margin: auto;
+}
+
+.firstsection{
+    height: 100vh;
+}
+
+.first-half{
+    width: 300vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.second-half img{
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 40%; 
+    filter: brightness(1.2);
+    margin-left: 20px;
+}
+
+.first-half .text-big{
+    font-size: 2.5rem;
+    padding-bottom: 2px;
+}
+
+.first-half .text-mid{
+    font-size: 1.1rem;
+    margin-bottom: 2px;
+}
+
+.first-half .text-small{
+    font-size: .9rem;
+    margin-bottom: 2px;
+}
+
+.buttons .btn{
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    padding: 2px 10px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    margin-top: 5px;
+    color: rgba(255, 166, 0, 0.68);
+    background-color: transparent;
+    cursor: pointer;
+}
+.sec2{
+    padding: 50px;
+}
+
+.sec2 .text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text h2{
+    width: 50%;
+    font-size: 38px;
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+.text .para{
+    font-size: 16px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.sec2 .card{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 15px;
+}
+
+.card img{
+    width: 90%;
+}
+
+.card h3{
+    margin: 15px;
+}
+
+.card .para2{
+    margin: 9px;    
+    font-size: 15px;
+}
+
+.cont .text1{
+    width: 40vw;
+}
+
+.info img{
+    width: 18%;
+}
+
+.text1 p{
+    margin: 10px 0;
+}
+
+.text1 #p{
+    margin: 30px 0;
+    color: gray;
+    line-height: 25px;
+}
+
+.text1 h2{
+    margin: 20px 0;
+}
+
+.text1 #h4{
+    color: orange;
+    font-size: 15px;
+    letter-spacing: -.2px;
+}
+
+.temple img{
+    width: 35vw;
+    cursor: pointer;
+}
+
+.cont{
+    margin: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.in{
+    margin-left: 30px;
+}
+
+.in h4{
+    margin-bottom: 10px;
+}
+
+.sec3 img{
+    /* height: 100vh;
+    background: rgba(0, 0, 0, 0.3) url('imagnav/temple2.jpg');
+    cursor: pointer;
+    filter: brightness(1.2);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken; */
+    position: relative;
+    top: 3px;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.99;
+}
+
+footer{
+    background-color: #01283d;
+    padding: 60px 115px;
+    /* height: 81vh; */
+    height: 480px;
+}
+
+footer .footUp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footUp{
+    margin-bottom: 50px;
+}
+
+.footUp button{
+    width: 20%;
+    padding: 20px 25px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: white;
+    border: transparent;
+    text-transform: uppercase;
+    background-color: orange;
+}
+
+.footUp button:hover{
+    color: black;
+    background-color: white;
+}
+
+.text2{
+    color: white;
+}
+
+.text2 .p2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+ 
+.grid .card1{
+    color: white;
+    width: 20vw;
+}
+
+.card1 .h0{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.card1 li{
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+.card1 li span{
+    margin-left: 32px;
+}
+
+.card1 .id{
+    font-size: 16px;
+    margin-right: 20px;
+    color: rgba(255, 255, 0, 0.701);
+}   
+
+.c2{
+    display: flex;
+}
+
+.c2 li{
+    padding: 12px;
+}
+
+.c2 i{
+    color: white;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(4,55,83,1);
+}
+
+.c1{
+    padding: 40px;
+    background-color: rgba(4,55,83,1);
+}
+
+.ca2{
+    padding: 40px;
+    background-color: rgba(30,77,103,1);
+}
+
+.ca3{
+    padding: 40px;
+    background-color: rgba(4,55,83,1);
+}
+
+.card1 .fa-angle-right{
+    padding-right: 10px;
+}
+
+.foot2{
+    color: white;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
